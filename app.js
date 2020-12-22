@@ -8,7 +8,7 @@ app.use(bodyParser.json({limit: '50mb'}));
 app.use(cors());
 
 app.get('/', (req, res) => {
-    res.send("Hey this is a test project...heyyyy yuuhhuudasdsaduuu");
+    res.send("Hey this is a test project...");
 })
 
 app.set('port', 3000);
