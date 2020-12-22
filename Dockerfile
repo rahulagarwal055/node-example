@@ -1,6 +1,6 @@
-FROM node:14
-WORKDIR /Users/rahul/Documents/Personal Projects/node-example
-COPY package*.json app.js ./
+FROM node:latest
+COPY . /var/www
+WORKDIR /var/www
 RUN npm install
 EXPOSE 3000
-CMD ["node", "app.js"]
+CMD ["npm", "start"]
